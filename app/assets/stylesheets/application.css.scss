@@ -13,7 +13,45 @@
  *= require_tree .
  *= require_self
  */
- @import "bootstrap";
  * {
   font-family: 'Open Sans Condensed' !important;
  }
+
+ body {
+  padding-top: 50px;
+ }
+
+.fa {
+  font-family: FontAwesome !important;
+}
+
+.blue {
+  color: #428bca;
+}
+
+.navbar-default {
+  background-color: white !important;
+  border: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.header {
+  background-color: #428bca;
+  color: white;
+  padding-bottom: 45px;
+  padding-top: 45px;
+  margin-bottom: 20px;
+}
+
+.title-head {
+  font-size: 85px;
+  text-shadow: 4px 2px #000000;
+}
+
+.emp {
+  color: #B8B8B8;
+}
+
+.jumbotron h1 {
+  line-height: 85px;
+}
