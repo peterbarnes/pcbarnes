@@ -2,7 +2,7 @@
 <% provide(:subtext, "I am a software developer with a passion to create functional, innovative, and attractive applications.") %>
 <div class="row">
   <div class="col-md-12 jumbotron main">
-    <h1 class="text-center">My name is 
+    <h1>My name is 
       <span class="blue">PETER BARNES</span> and my goal is to create 
       <span class="blue">FUNCTIONAL</span>, 
       <span class="blue">INNOVATIVE</span>, and 
@@ -11,5 +11,39 @@
   </div>
 </div>
 <div class="row">
-  
+  <div class="col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-title">
+          <h3 class="no-bottom text-right"><small class="pull-left"><%= link_to "See a full list of my projects here!", projects_path %></small>Here is a glimpse of what I do</h3>
+        </div>
+      </div>
+      <div class="panel-body">
+        <h2><i class="fa fa-gamepad"></i> <a href="https://gameroom.herokuapp.com" target="blank">Gameroom for President</a></h2>
+        <%= image_tag('gameroom.png', size: '720x350', class: "img-responsive img-thumbnail") %>
+        <blockquote>
+          The Gameroom is a local business in Lincoln, NE that specializes in all kinds of media.  They sell everything from games to movies to electronics and they needed a website!  This website allows users to get information on store locations, send emails to the store, see what specials are going on, and much more!
+        </blockquote>
+        <a href="https://github.com/peterbarnes/gameroomforpresident" target="blank"><i class="fa fa-git-square"></i> Here's the source code on github if you're interested!</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-title">
+          <h3 class="no-bottom">How do I code?</h3>
+        </div>
+      </div>
+      <div class="panel-body">
+        <h4 class="text">
+          I work in the <a href="http://rubyonrails.org/" target="blank">Ruby on Rails</a> framework which requires a strong knowledge of the <a href="https://www.ruby-lang.org" target="blank">Ruby</a> programming language as well as a strong foundation in <a href="http://en.wikipedia.org/wiki/HTML" target="blank">HTML</a>, <a href="http://en.wikipedia.org/wiki/Cascading_Style_Sheets" target="blank">CSS</a>, and <a href="http://en.wikipedia.org/wiki/JavaScript" target="blank">Javascript</a>.  FYI, the website you are viewing right now was made with Ruby on Rails!
+        <hr>
+          For projects that do not require the amount of power that rails gives you, I prefer <a href="http://www.sinatrarb.com/" target="blank">Sinatra</a> as a light-weight framework  that still gives you a lot of the cool features that come with using Ruby as a web development language.
+        <hr>
+          I use <a href="https://www.apple.com/osx/" target="blank">Mac OS X</a> for my operating system and I use <a href="http://www.sublimetext.com/2" target="blank">Sublime Text 2</a> as my text editor.  For testing my apps in development I prefer to use <a href="http://pow.cx/" target="blank">Pow</a> instead of Rails server as it doesn't require me to restart my web server every time I make change.  For production, I use <a href="https://id.heroku.com/login" target="blank">Heroku</a> to serve my applications.
+        </h4> 
+      </div>
+    </div>
+  </div>
 </div>

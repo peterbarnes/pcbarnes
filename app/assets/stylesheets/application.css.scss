@@ -31,8 +31,8 @@
 
 .navbar-default {
   background-color: white !important;
-  border: 0px !important;
   margin-bottom: 0px !important;
+  border-bottom: 1px solid #C7C7C7;
 }
 
 .header {
@@ -56,5 +56,43 @@
   background-color: white !important;
   h1 {
     line-height: 85px;
+  }
+}
+
+.no-bottom {
+  margin-bottom: 0px !important;
+}
+
+.panel {
+  border-radius: 0px !important;
+}
+
+.text {
+  line-height: 25px;
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #999999;
+  a {
+    color: #555;
+    &:hover {
+      color: #222;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    li {
+      float: left;
+      margin-left: 10px;
+    }
+  }
+  nav li {
+    font-size: 75%;
   }
 }
