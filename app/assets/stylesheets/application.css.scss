@@ -49,9 +49,12 @@
 }
 
 .emp {
-  text-shadow: 3px 2px #ffffff;
+  text-shadow: 2px 1px #2A6AA1;
 }
 
-.jumbotron h1 {
-  line-height: 85px;
+.jumbotron {
+  background-color: white !important;
+  h1 {
+    line-height: 85px;
+  }
 }

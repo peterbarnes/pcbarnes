@@ -1,2 +1,39 @@
 <% provide(:title, "CONNECT WITH ME") %>
 <% provide(:subtext, "Great software is created in groups.  Here is how you can connect with me") %>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Follow me on these social networks</h3>
+    <a href="https://facebook.com/peterbarnes213"><i class="fa fa-facebook-square fa-5x"></i></a>
+    <br>
+    <a href="https://www.linkedin.com/profile/view?id=324922829&trk=nav_responsive_tab_profile_pic"><i class="fa fa-linkedin-square fa-5x"></i></a>
+    <br>
+    <a href="https://github.com/peterbarnes"><i class="fa fa-git-square fa-5x"></i></a>
+  </div>
+  <div class="col-md-6">
+    <h3>Send me an email, I'd love to hear from you!</h3>
+    <%= form_tag("/send", method: "post") do %>
+      <div class="row">
+        <div class="col-md-6 form-group">
+          <%= label_tag(:name, "Name") %>
+          <%= text_field_tag(:name, params[:name], class: "form-control") %>
+          <hr>
+          <%= label_tag(:email, "Email") %>
+          <%= text_field_tag(:email, params[:email], class: "form-control") %>
+        </div>
+        <div class="col-md-6 form-group">
+          <%= label_tag(:body, "Message") %>
+          <%= text_area_tag(:body, params[:body], class: "form-control", rows: "6") %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-1">
+          <button type="submit" 
+                  class="btn btn-primary">
+               <i class="fa fa-envelope-o"></i> 
+              Send
+          </button>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

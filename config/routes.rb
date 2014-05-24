@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   match '/about',    to: 'static_pages#about',    via: 'get'
   match '/projects', to: 'static_pages#projects', via: 'get'
   match '/resume',   to: 'static_pages#resume',   via: 'get'
+  post 'send' =>         'static_pages#sendit'
 end
