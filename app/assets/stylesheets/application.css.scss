@@ -63,6 +63,10 @@
   margin-bottom: 0px !important;
 }
 
+.no-top {
+  margin-top: 0px !important;
+}
+
 .panel {
   border-radius: 0px !important;
 }
@@ -76,8 +80,10 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999999;
+  font-family: 'Open Sans' !important;
   a {
     color: #555;
+    font-family: 'Open Sans' !important;
     &:hover {
       color: #222;
     }
@@ -96,3 +102,8 @@ footer {
     font-size: 75%;
   }
 }
+
+button, .form-control {
+  border-radius: 0px !important;
+}
+
