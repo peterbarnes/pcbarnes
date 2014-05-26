@@ -12,7 +12,10 @@
  *
  *= require_tree .
  *= require_self
+ *= require font-awesome
  */
+@import "bootstrap";
+
  * {
   font-family: 'Open Sans Condensed' !important;
  }
