@@ -33,8 +33,10 @@
   background-color: white !important;
   margin-bottom: 0px !important;
   border-bottom: 1px solid #C7C7C7;
-  .title-nav {
-    margin-left: 0px !important;
+  .navbar-nav li {
+    a {
+      font-size: 18px !important;
+    }
   }
 }
 
