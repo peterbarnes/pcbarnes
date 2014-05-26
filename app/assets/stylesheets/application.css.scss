@@ -73,10 +73,6 @@
   margin-top: 0px !important;
 }
 
-.panel {
-  border-radius: 0px !important;
-}
-
 .text {
   line-height: 25px;
 }
@@ -109,8 +105,9 @@ footer {
   }
 }
 
-button, .form-control {
-  border-radius: 0px !important;
+.long-text {
+  font-family: "Open Sans" !important;
+  font-weight: 300;
 }
 
 
