@@ -13,3 +13,12 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+$(document).ready(function() {
+  $('.fa-5x').hover(
+      function() {
+        $(this).addClass('animated pulse');
+      }, function() {
+        $(this).removeClass('animated pulse');
+      }
+    );
+});
