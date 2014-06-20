@@ -21,4 +21,24 @@ $(document).ready(function() {
         $(this).removeClass('animated pulse');
       }
     );
+
+  $('.btn-block').hover(
+      function() {
+        $(this).addClass('animated pulse');
+      }, function() {
+        $(this).removeClass('animated pulse');
+      }
+    );
+
+  $('.navbar-brand').hover(
+      function() {
+        $(this).addClass('animated tada');
+      }, function() {
+        $(this).removeClass('animated tada');
+      }
+    );
+
+  $("a.dropdown-toggle").click(function() {
+    $(this).next("ul.dropdown-menu").slideToggle(200);
+  });
 });
