@@ -1,0 +1,38 @@
+- provide(:title, "CONNECT WITH ME")
+- provide(:subtext, "Great software is created in groups.  Here is how you can connect with me.")
+.row
+  .col-md-12
+    %h3.text-center.big
+      Follow me on these social networks
+    .col-md-12.text-center
+      .col-md-12
+        %a{ href: 'https://facebook.com/peterbarnes213', target: 'blank' }
+          %i.fa.fa-facebook-square.fa-5x
+      .col-md-12
+        %a{ href: 'https://www.linkedin.com/profile/view?id=324922829&trk=nav_responsive_tab_profile_pic', target: 'blank' }
+          %i.fa.fa-linkedin-square.fa-5x
+      .col-md-12
+        %a{ href: 'https://github.com/peterbarnes', target: 'blank' }
+          %i.fa.fa-github-square.fa-5x
+      .col-md-12
+        %a{ href: 'https://twitter.com/pcb213', target: 'blank' }
+          %i.fa.fa-twitter-square.fa-5x
+  .col-md-6.col-md-offset-3
+    %h3.text-center.big
+      Send me an email, I'd love to hear from you!
+    = form_tag("/send", method: "post") do 
+      .form-group
+        = label_tag(:name, params[:name], class: 'sr-only')
+        = text_field_tag(:name, params[:name], class: 'lead input-lg form-control long-text', placeholder: "Name")
+
+      .form-group
+        = label_tag(:email, params[:email], class: 'sr-only')
+        = text_field_tag(:email, params[:email], class: "lead input-lg form-control long-text", placeholder: "Email")
+
+      .form-group
+        = label_tag(:body, params[:body], class: "sr-only")
+        = text_area_tag(:body, params[:body], class: "lead input-lg form-control long-text", placeholder: "Message", rows: '5')
+
+      %button.btn.btn-primary.btn-block.btn-lg.long-text.lead{ type: 'submit' }
+        %i.fa.fa-envelope-o
+        Send
