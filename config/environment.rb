@@ -13,3 +13,8 @@ ActionMailer::Base.smtp_settings = {
   :domain         => 'www.pcbarnes.com',
   :enable_starttls_auto => true
 }
+
+Tumblr.configure do |config|
+  config.consumer_key = "VHi5mlwIOZPNnNPPJHDPFkXwGA6YW7R1nE1igPp0bgqYwoCxJp"
+  config.consumer_secret = "a6lNgqp2JSPUciRPVzrMiSdbMfUQrLFitOcB7bemoY2I5rCIET"
+end

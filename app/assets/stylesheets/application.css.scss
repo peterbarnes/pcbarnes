@@ -15,12 +15,18 @@
  */
 
 @media all and (max-width: 766px) {
-  .title-head, .jumbotron, .row {
+  .title-head, .jumbotron, .row, .about-head {
     text-align: center !important; 
   }
   blockquote {
     border-left: 0px !important;
     text-align: center;
+  }
+  .indented {
+    padding-left: 0px !important; 
+  }
+  .resume {
+    text-align: left !important;
   }
 }
 
@@ -28,16 +34,23 @@
   .title-head {
     font-size: 85px !important;
   }
+  .about-head {
+    font-size: 65px !important;
+  }
 }
 
 @media all and (max-width: 392px) {
   .title-head {
     font-size: 65px !important;
   }
+
+  .about-head {
+    font-size: 32px !important;
+  }
 }
 
  * {
-  font-family: 'Open Sans Condensed' !important;
+  font-family: 'Roboto' !important;
  }
 
  body {
@@ -74,8 +87,8 @@
 
 .title-head {
   font-size: 110px;
-  text-shadow: 4px 2px #000000;
-  letter-spacing: -1px;
+  text-shadow: 2px 1px #000000;
+  letter-spacing: -6px;
 }
 
 .emp {
@@ -106,10 +119,10 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
   color: #999999;
-  font-family: 'Open Sans' !important;
+  font-family: 'Roboto' !important;
   a {
     color: #555;
-    font-family: 'Open Sans' !important;
+    font-family: 'Roboto' !important;
     &:hover {
       color: #222;
     }
@@ -134,8 +147,7 @@ ul {
 }
 
 .long-text {
-  font-family: "Open Sans" !important;
-  font-weight: 300;
+  font-family: "Roboto" !important;
 }
 
 .big {
@@ -145,6 +157,15 @@ ul {
 blockquote {
   border-left: 2px solid #ffffff;
   padding: 10px 10px;
+}
+
+.readable {
+  font-size: 18px !important;
+}
+
+.about-head {
+  font-size: 60px;
+  margin-bottom: 35px !important;
 }
 
 
