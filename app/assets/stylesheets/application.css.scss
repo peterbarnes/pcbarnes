@@ -67,12 +67,13 @@
 }
 
 .navbar-default {
-  background-color: white !important;
+  background-color: rgba(255,255,255,0.7);
   margin-bottom: 0px !important;
   border-bottom: 1px solid #C7C7C7;
   .navbar-nav li {
     a {
       font-size: 18px !important;
+      color: black !important;
     }
   }
 }
