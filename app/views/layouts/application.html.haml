@@ -20,12 +20,14 @@
     = csrf_meta_tags
 
   %body
-    = render 'layouts/header'
-    = render 'layouts/banner'
+    #top
+    = render "layouts/header"
     .container
-      - flash.each do |key, value|
-        %div.alert.alert-dismissable{ class: "alert-#{key}" }
-          %button.close{ type: 'button', 'data-dismiss' => 'alert', 'aria-hidden' => 'true' }
-            &times;
-          = value
-      = yield
+      .row
+        .col-md-10.col-md-offset-1
+          - flash.each do |key, value|
+            %div.alert.alert-dismissable{ class: "alert-#{key}" }
+              %button.close{ type: 'button', 'data-dismiss' => 'alert', 'aria-hidden' => 'true' }
+                &times;
+              = value
+    = yield

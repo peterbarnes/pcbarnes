@@ -14,6 +14,12 @@
  *= require_self
  */
 
+ $primary_blue: #2CA3F2;
+ $darker_blue: #084B78;
+ $dark_blue: #0F96F0;
+ $light_blue: #3EAFFA;
+ $gray: #707070;
+
 @media all and (max-width: 766px) {
   .title-head, .jumbotron, .row, .about-head {
     text-align: center !important; 
@@ -52,10 +58,12 @@
  * {
   font-family: 'Roboto' !important;
   font-weight: 100 !important;
+  color: white;
  }
 
  body {
-  padding-top: 50px;
+  background-color: $primary_blue;
+  padding-top: 85px;
   margin-bottom: 40px;
  }
 
@@ -63,18 +71,15 @@
   font-family: FontAwesome !important;
 }
 
-.blue {
-  color: #428bca;
-}
-
 .navbar-default {
-  background-color: rgba(255,255,255,0.7);
+  background-color: rgba(52,152,219,0.7);
   margin-bottom: 0px !important;
-  border-bottom: 1px solid #C7C7C7;
+  border-bottom: 0px;
   .navbar-nav li {
     a {
       font-size: 18px !important;
-      color: black !important;
+      color: white !important;
+      font-weight: 400 !important;
     }
   }
 }
@@ -87,22 +92,8 @@
   margin-bottom: 20px;
 }
 
-.title-head {
-  font-size: 110px;
-  text-shadow: 2px 1px #000000;
-  letter-spacing: -6px;
-}
 
-.emp {
-  text-shadow: 2px 1px #2A6AA1;
-}
 
-.jumbotron {
-  background-color: transparent !important;
-  h1 {
-    line-height: 85px;
-  }
-}
 
 .no-bottom {
   margin-bottom: 0px !important;
@@ -114,34 +105,6 @@
 
 .text {
   line-height: 25px;
-}
-
-footer {
-  margin-top: 45px;
-  padding-top: 5px;
-  border-top: 1px solid #eaeaea;
-  color: #999999;
-  font-family: 'Roboto' !important;
-  a {
-    color: #555;
-    font-family: 'Roboto' !important;
-    &:hover {
-      color: #222;
-    }
-  }
-  small {
-    float: left;
-  }
-  ul {
-    float: right;
-    li {
-      float: left;
-      margin-left: 10px;
-    }
-  }
-  nav li {
-    font-size: 75%;
-  }
 }
 
 ul {
@@ -157,18 +120,57 @@ ul {
   font-size: 65px;
 }
 
-blockquote {
-  border-left: 2px solid #ffffff;
-  padding: 10px 10px;
-}
-
 .readable {
   font-size: 18px !important;
 }
 
-.about-head {
-  font-size: 60px;
-  margin-bottom: 35px !important;
+.dark_blue {
+  background-color: $dark_blue;
+  padding: 75px;
+}
+
+.darker_blue {
+  background-color: $darker_blue;
+  padding: 75px;
+}
+
+.light_blue {
+  background-color: $light_blue;
+  padding: 75px;
+}
+
+.primary_blue {
+  background-color: $primary_blue;
+  padding: 75px;
+}
+
+.shadow {
+  text-shadow: 2px 2px #000000;
+}
+
+.spread {
+  line-height: 75px;
+}
+
+.push-bottom {
+  margin-bottom: 40px;
+}
+
+.highlight {
+  color: white !important;
+  transition: font-size 100ms ease-out;
+  &:hover {
+    text-decoration: none !important;
+    text-shadow: 2px 2px #000000 !important;
+    font-size: 110% !important;
+  }
+}
+
+.alert-success {
+  background-color: $dark_blue !important;
+  border: 0px !important;
+  border-radius: 0px !important;
+  color: white !important;
 }
 
 
