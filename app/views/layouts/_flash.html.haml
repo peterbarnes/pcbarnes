@@ -1,0 +1,8 @@
+.container
+  .row
+    .col-md-10.col-md-offset-1
+      - flash.each do |key, value|
+        %div.alert.alert-dismissable{ class: "alert-#{key}" }
+          %button.close{ type: 'button', 'data-dismiss' => 'alert', 'aria-hidden' => 'true' }
+            &times;
+          = value

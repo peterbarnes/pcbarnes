@@ -14,6 +14,8 @@
  *= require_self
  */
 
+ /* SOFTWARE CSS */
+
  $primary_blue: #2CA3F2;
  $darker_blue: #084B78;
  $dark_blue: #0F96F0;
@@ -171,6 +173,58 @@ ul {
   border: 0px !important;
   border-radius: 0px !important;
   color: white !important;
+}
+
+$primary_purple: #8e44ad;
+$darker_purple: #4B245C;
+$dark_purple: #9647B8;
+$light_purple: #9B47BF;
+
+
+body.music {
+  background-color: $primary_purple !important;
+  * {
+    font-family: "Roboto" !important;
+    font-weight: 100 !important;
+    color: white !important;
+  }
+
+  .fa {
+    font-family: FontAwesome !important;
+  }
+
+  .navbar-default {
+    background-color: rgba(120,67,173,0.7);
+    margin-bottom: 0px !important;
+    border-bottom: 0px;
+    .navbar-nav li {
+      a {
+        font-size: 18px !important;
+        color: white !important;
+        font-weight: 400 !important;
+      }
+    }
+  }
+
+  .primary_purple {
+    background-color: $primary_purple !important;
+    padding: 75px;
+  }
+
+  .dark_purple {
+    background-color: $dark_purple !important;
+    padding: 75px;
+  }
+
+  .darker_purple {
+    background-color: $darker_purple !important;
+    padding: 75px;
+  }
+
+  .light_purple {
+    background-color: $light_purple !important;
+    padding: 75px;
+  }
 }
 
 

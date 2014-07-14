@@ -1,6 +1,10 @@
 class StaticPagesController < ApplicationController
-  def index
+  def software
     
+  end
+
+  def music
+    render layout: "music_layout"
   end
 
   def sendit

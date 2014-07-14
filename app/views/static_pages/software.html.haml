@@ -1,3 +1,5 @@
+= render "layouts/header"
+= render "layouts/flash"
 .container
   .row
     .col-md-12
@@ -35,20 +37,18 @@
   .container
     .row
       .col-md-12
-        = image_tag("gameroom.png", size: '700x300', class: "img-responsive center-block")
         %h1.text-center
-          %a.highlight{ href: 'http://gameroom.herokuapp.com', target: "blank" }
-            Gameroom
+          %a{ href: 'http://gameroom.herokuapp.com', target: "blank" }
+            = image_tag("gameroom.png", size: '700x300', class: "img-responsive center-block")
         %p.long-text.readable.text-center
           The Gameroom is a local business in Lincoln, NE that specializes in all kinds of media.  They sell everything from games to movies to electronics and they needed a website!  This website allows users to get information on store locations, send emails to the store, see what specials are going on, and much more!
 .light_blue
   .container
     .row
       .col-md-12
-        = image_tag("dic.png", size: '700x300', class: "img-responsive center-block")
         %h1.text-center
-          %a.highlight{ href: "http://www.downincircles.com", target: "blank" }
-            Down In Circles
+          %a{ href: "http://www.downincircles.com", target: "blank" }
+            = image_tag("dic.png", size: '700x300', class: "img-responsive center-block")
         %p.long-text.readable.text-center
           Down In Circles is the name of the band that I play guitar in.  We've been together for years and just recently realized that we needed a website that we could use to promote ourselves and give our fans another way to hear our music and keep up with us.  This website is a basic site that allows users to read about us, see upcoming shows, and listen to our music.
 
@@ -56,10 +56,9 @@
   .container
     .row
       .col-md-12
-        = image_tag("Cashier@2x.png", size: '700x300', class: "img-responsive center-block")
         %h1.text-center
-          %a.highlight{ href: 'http://cashier-signup.herokuapp.com', target: "blank" }
-            Cashier
+          %a{ href: 'http://cashier-signup.herokuapp.com', target: "blank" }
+            = image_tag("Cashier@2x.png", size: '700x300', class: "img-responsive center-block") 
         %p.long-text.readable.text-center
           The Cashier Point Of Sale is a mobile POS application currently being developed by Infinite Token.  The POS will not only handle cashiers, registers, and sales, but it also has a built in achievement system!  I had to build the administrative backend as well as the main sign up page.  
 .darker_blue#about

@@ -6,8 +6,8 @@
     %meta{ charset: 'utf-8' }
     %meta{ name: 'apple-mobile-web-app-capable', content: 'yes' }
     %meta{ name: 'viewport', content: 'width=device-width', 'initial-scale' => '1.0' }
-    %meta{ name: 'description', content: 'Peter Barnes' }
-    %meta{ name: 'author', content: 'Peter Barnes' }
+    %meta{ name: 'description', content: 'Peter Barnes Musician' }
+    %meta{ name: 'author', content: 'Peter Barnes Musician' }
     %link{ rel: 'icon', href: '/favicon.png', type: 'image/png' }
     %link{ rel: 'shortcut icon', href: '/favicon.png' }
     = favicon_link_tag '/apple-touch-icon.png', rel: 'apple-touch-icon', type: 'image/png'
@@ -19,5 +19,5 @@
     %script{ src: '//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js' }
     = csrf_meta_tags
 
-  %body
-    = yield
+    %body.music
+      = yield
