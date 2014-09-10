@@ -5,10 +5,10 @@
     .col-md-12
       = image_tag("logo.svg", size: "375x375", class: "img-responsive center-block")
     .col-md-12
-      %h1.text-center.big.shadow
+      %h1.text-center.big.squeeze
         Peter Barnes
       %h2.text-center.push-bottom
-        Software developer | Web designer | Musician
+        Software developer | Designer | Musician
 .dark_blue
   .container
     .row
@@ -27,45 +27,38 @@
           %span.shadow
             attractive
           applications.
-.darker_blue#projects
+.light_blue#projects
   .container
     .row
       .col-md-12
-        %h1.text-center.big.shadow
+        %h1.text-center.big
           Here's what I've done
 .primary_blue
   .container
     .row
-      .col-md-12
-        %h1.text-center
-          %a{ href: 'http://gameroom.herokuapp.com', target: "blank" }
-            = image_tag("gameroom.png", size: '700x300', class: "img-responsive center-block")
-        %p.long-text.readable.text-center
-          The Gameroom is a local business in Lincoln, NE that specializes in all kinds of media.  They sell everything from games to movies to electronics and they needed a website!  This website allows users to get information on store locations, send emails to the store, see what specials are going on, and much more!
-.light_blue
+      .col-md-4
+        %a{ href: 'http://www.gameroomforpresident.com', target: 'blank' }
+          = image_tag('gameroom.svg', size: '250x250', class: 'img-responsive center-block')
+        %h1.text-center.huge-top
+          %a.highlight{ href: 'http://www.gameroomforpresident.com', target: 'blank' } 
+            Gameroom
+      .col-md-4
+        %a{ href: 'http://www.downincircles.com', target: 'blank' }
+          = image_tag('dic.svg', size: '250x250', class: "img-responsive center-block")
+        %h1.text-center.huge-top
+          %a.highlight{ href: 'http://www.downincircles.com', target: 'blank' }
+            Down In Circles
+      .col-md-4
+        %a{ href: 'http://www.cashier-signup.herokuapp.com', target: 'blank' }
+          = image_tag('cashier.svg', size: '250x250', class: "img-responsive center-block")
+        %h1.text-center.huge-top
+          %a.highlight{ href: 'http://www.cashier-signup.herokuapp.com', target: 'blank' } 
+            Cashier POS
+.dark_blue#about
   .container
     .row
       .col-md-12
-        %h1.text-center
-          %a{ href: "http://www.downincircles.com", target: "blank" }
-            = image_tag("dic.png", size: '700x300', class: "img-responsive center-block")
-        %p.long-text.readable.text-center
-          Down In Circles is the name of the band that I play guitar in.  We've been together for years and just recently realized that we needed a website that we could use to promote ourselves and give our fans another way to hear our music and keep up with us.  This website is a basic site that allows users to read about us, see upcoming shows, and listen to our music.
-
-.dark_blue
-  .container
-    .row
-      .col-md-12
-        %h1.text-center
-          %a{ href: 'http://cashier-signup.herokuapp.com', target: "blank" }
-            = image_tag("Cashier@2x.png", size: '700x300', class: "img-responsive center-block") 
-        %p.long-text.readable.text-center
-          The Cashier Point Of Sale is a mobile POS application currently being developed by Infinite Token.  The POS will not only handle cashiers, registers, and sales, but it also has a built in achievement system!  I had to build the administrative backend as well as the main sign up page.  
-.darker_blue#about
-  .container
-    .row
-      .col-md-12
-        %h1.text-center.big.shadow
+        %h1.text-center.big
           About me
 
 .light_blue
@@ -96,19 +89,13 @@
         .col-md-3
           %a{ href: "http://www.mongodb.org", target: "blank" }
             = image_tag("mongodb.png", size: "250x250", class: "center-block img-responsive")
-.dark_blue
+.dark_blue#connect
   .container
     .row
       .col-md-12
-        %p.long-text.readable
-          My name is Peter Barnes and my goal is to create functional, innovative, and attractive applications. &nbsp;I mention this quite often because it is a reoccuring theme. &nbsp;I've been writing software since July of 2013 and something that I always focus on when making an application is design, because the user interface is what will sell your app. &nbsp;I also design my apps to be simple to use and I often ask myself, "If I had to use this app, how would I want it to work?" which has not only led to a simpler user interface, but also a much simpler code base. &nbsp;I started with writing simple HTML webpages and eventually learned CSS and Javascript after that which is where I started to get my understanding of web design. &nbsp;I started working with rails around January of 2014 and started working at Infinite Token, where I am currently employed.
-.darker_blue#connect
-  .container
-    .row
-      .col-md-12
-        %h1.text-center.big.shadow
+        %h1.text-center.big
           Connect with me
-.dark_blue
+.light_blue
   .container  
     .row
       .col-md-12

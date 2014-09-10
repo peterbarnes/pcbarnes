@@ -3,9 +3,10 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .smooth {
-  transition: text-shadow 300ms ease-out;
+  color: white !important;
+  transition: color 200ms ease-out;
   &:hover {
-    text-shadow: 1px 1px #000000 !important;
+    color: #4f4f4f !important;
   }
 }
 
